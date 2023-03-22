@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "banit",
+  "version": "${version}",
+
+  "name": "Example Mod",
+  "description": "Make you can ban something in your server.",
+  "authors": [
+    "Someoneice"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "Pineapple",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "club.someoneice.banit.BanIt"
+    ]
+  },
+  "mixins": [
+    "banit.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
