@@ -50,4 +50,23 @@ public class BanIt implements ModInitializer {
 	public static String getIDByStack(ItemStack stack) {
 		return Registry.ITEM.getId(stack.getItem()).toString();
 	}
+
+	private class Data {
+		private List<String> defaultlist;
+		private List<String> whitelist;
+
+		public Data(List<String> defaultlist, List<String> whitelist) {
+			this.defaultlist = defaultlist;
+			this.whitelist = whitelist;
+		}
+
+		public List<String> getDefaultList() {
+			return this.defaultlist;
+		}
+
+		public List<String> getwhitelist() {
+			return this.whitelist;
+		}
+	}
+
 }
